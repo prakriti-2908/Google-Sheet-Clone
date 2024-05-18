@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vanilla css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Google Sheet</title>
+</head>
+<body>
+
+    <nav>
+        <i class="fa-solid fa-table"></i>
+        <h2 id="heading">My Spreadsheet</h2>
+    </nav>
+    
+    <div class="toolbar">
+
+        <!-- bold,italic,strikethrough -->
+        <div class="tooltip">
+            <button id="strikethrough"><b><s>S</s></b></button>
+            <p class="tooltiptext">StrikeThrough</p>
+        </div>
+        <div class="tooltip">
+            <button id="italic"><b><i>I</i></b></button>
+            <p class="tooltiptext">Italic</p>
+        </div>
+        <div class="tooltip">
+            <button id="bold"><b>B</b></button>
+            <p class="tooltiptext">Bold</p>
+        </div>
+
+        <!-- format -->
+        <div class="tooltip">
+            <button id="currency">$</button>
+            <p class="tooltiptext">Format as currency</p>
+        </div>
+        <div class="tooltip">
+            <button id="percentage">%</button>
+            <p class="tooltiptext">Format as percentage</p>
+        </div>
+        <div class="tooltip">
+            <button id="normalText">123</button>
+            <p class="tooltiptext">Format as Normal Text</p>
+        </div>
+
+        <!-- color -->
+        <div id="flex-tool" class="tooltip">
+            <label for="color-picker" id="lebelColor">A</label>
+            <input type="color" value="#fffff" name="color-pickerr" id="color-picker">
+            <p class="tooltiptext">Text Color</p>
+        </div>
+
+        <!-- font style -->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Font</button>
+            <div id="myDropdown" class="dropdown-content">
+              <p id="tnr">Times New Roman(Default)</p>
+              <p id="Arial">Arial</p>
+              <p id="Courier">Courier New</p>
+              <p id="Franklin">Franklin Gothic Medium</p>
+              <p id="cursive">Cursive</p>
+              <p id="brush">Brush Script MT</p>
+            </div>
+        </div>
+
+
+        <!-- horizontal align -->
+        <div id="textAlign">
+            <div class="align tooltip">
+                <i id="align-right" class="fa-solid fa-align-right"></i>
+                <p class="tooltiptext">Align Right</p>
+            </div>
+            <div class="align tooltip">
+                <i id="align-left" class="fa-solid fa-align-left"></i>
+                <p class="tooltiptext">Align Left</p>
+            </div>
+            <div class="align tooltip">
+                <i id="align-center" class="fa-solid fa-align-center"></i>
+                <p class="tooltiptext">Align Center</p>
+            </div>
+        </div>
+
+        <!-- border -->
+        <div id="border">
+            <div class=" tooltip">
+                <i id="noBorder" class="fa-solid fa-border-none"></i>
+                <p class="tooltiptext">Remove Border</p>
+            </div>
+            <div class=" tooltip">
+                <i id="addBorder" class="fa-solid fa-border-all"></i>
+                <p class="tooltiptext">Add Border</p>
+            </div>
+        </div>
+
+        <!-- font size -->
+        <div id="fontSizeDiv">
+            <button id="fontDec" class="fontSizeBtn">-</button>
+            <input type="text" value="15" name="FontSize" id="FontSize">
+            <button id="fontInc" class="fontSizeBtn">+</button>
+        </div>
+
+
+        
+
+    </div>
+    <div class="selectedone">
+        <p id="cellName"></p>
+    </div>
+    <div id="container"></div>
+
+
+    <!-- vanilla js -->
+    <script src="index.js"></script>
+</body>
+</html>

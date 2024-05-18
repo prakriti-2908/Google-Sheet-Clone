@@ -1,0 +1,218 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(26,100px);
+    grid-template-rows: repeat((26,50px));
+
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+.cell{
+    border: 1px solid #C4C7C5;
+    box-sizing: border-box;
+}
+
+.header-cell{
+    text-align: center;
+
+}
+
+#white-header{
+    white-space: pre;
+    padding: 8.78px;
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 10px 0;
+    margin-top: -5px !important;
+    /* border: 1px solid red; */
+    padding-left: 72px;
+    padding-top: 10px;
+    height: 40px;
+    background-color: #EDF2FA;
+    color: #444746;
+    border-radius: 50px;
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: medium;
+    }
+}
+
+
+/* style for selected cells */
+
+.cell-selected{
+    border: 2px solid green;
+}
+
+
+/* toolbar */
+
+#flex-tool{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -13px;
+}
+.colorpick-eyedropper-input-trigger{
+    display: none;
+}
+#lebelColor{
+    margin: auto;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+#color-picker{
+    width: 40px;
+    height: 15px;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/* hover description */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(46, 44, 44);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: small;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* cell name */
+.selectedone{
+    width: 7.9%;
+    height: 26px; 
+    box-sizing: border-box;  
+    border:1px solid #C4C7C5;
+    margin-bottom: 10px;
+}
+#cellName{
+    width: 134%;
+    margin-left: -16px;
+    text-align: center;
+    position: relative;
+    top: -184%;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Font Size */
+#FontSize{
+    width: 10%;
+    position: relative;
+    top: -4px;
+}
+
+.fontSizeBtn{
+    font-size: 25px !important;
+}
+
+#fontSizeDiv{
+    position: relative;
+    top: -3px;
+    width: 14%;
+}
+
+/* Dropdown Button for font style*/
+.dropbtn {
+    background-color: transparent !important;
+    color: black;
+    padding: 7px;
+    font-size: 6px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    top: -3px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0px !important;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .show {display:block;}
+
+
+
+  /* text align */
+
+#textAlign{
+    position: relative;
+    top: 4px;
+}
+
+.align{
+    margin: 0px 20px;
+}
+
+/* border */
+#border{
+    position: relative;
+    top: 4px;
+}
+
+#noBorder{
+    margin-right: 20px;
+}
+
+
+
+/* logo */
+.fa-table{
+    color: green;
+    font-size: 50px;
+}
+#heading{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: -9px;
+}
